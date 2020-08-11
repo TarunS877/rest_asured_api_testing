@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.demo.controller.EmployeeControllerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-08-11T17:05:05" hostname="ABC" time="8.308">
+  <properties/>
+  <testcase name="getResponseBody()" classname="com.example.demo.controller.EmployeeControllerTest" time="4.467"/>
+  <testcase name="getResponseTime()" classname="com.example.demo.controller.EmployeeControllerTest" time="1.179"/>
+  <testcase name="getResponseContentType()" classname="com.example.demo.controller.EmployeeControllerTest" time="1.231"/>
+  <testcase name="getResponseHeaders()" classname="com.example.demo.controller.EmployeeControllerTest" time="1.423"/>
+  <system-out><![CDATA[22:35:08.169 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://demo.guru99.com:80
+22:35:08.570 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to demo.guru99.com:80
+22:35:09.093 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+22:35:09.095 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:35:09.096 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+22:35:09.097 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+22:35:09.097 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+22:35:09.098 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:09.099 [Test worker] DEBUG org.apache.http.wire -  >> "GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1[\r][\n]"
+22:35:09.101 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+22:35:09.101 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+22:35:09.101 [Test worker] DEBUG org.apache.http.wire -  >> "Host: demo.guru99.com[\r][\n]"
+22:35:09.101 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+22:35:09.102 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)[\r][\n]"
+22:35:09.102 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+22:35:09.102 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+22:35:09.102 [Test worker] DEBUG org.apache.http.headers - >> GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:09.103 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+22:35:09.103 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 0
+22:35:09.103 [Test worker] DEBUG org.apache.http.headers - >> Host: demo.guru99.com
+22:35:09.103 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+22:35:09.104 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)
+22:35:09.104 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+22:35:09.546 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+22:35:09.548 [Test worker] DEBUG org.apache.http.wire -  << "Date: Tue, 11 Aug 2020 17:05:10 GMT[\r][\n]"
+22:35:09.548 [Test worker] DEBUG org.apache.http.wire -  << "Server: Apache[\r][\n]"
+22:35:09.548 [Test worker] DEBUG org.apache.http.wire -  << "Upgrade: h2,h2c[\r][\n]"
+22:35:09.548 [Test worker] DEBUG org.apache.http.wire -  << "Connection: Upgrade, Keep-Alive[\r][\n]"
+22:35:09.549 [Test worker] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=600[\r][\n]"
+22:35:09.549 [Test worker] DEBUG org.apache.http.wire -  << "Expires: Tue, 11 Aug 2020 17:15:10 GMT[\r][\n]"
+22:35:09.549 [Test worker] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+22:35:09.549 [Test worker] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+22:35:09.550 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 315[\r][\n]"
+22:35:09.550 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=2, max=500[\r][\n]"
+22:35:09.550 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+22:35:09.551 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+22:35:09.552 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+22:35:09.552 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+22:35:09.552 [Test worker] DEBUG org.apache.http.headers - << Date: Tue, 11 Aug 2020 17:05:10 GMT
+22:35:09.552 [Test worker] DEBUG org.apache.http.headers - << Server: Apache
+22:35:09.553 [Test worker] DEBUG org.apache.http.headers - << Upgrade: h2,h2c
+22:35:09.553 [Test worker] DEBUG org.apache.http.headers - << Connection: Upgrade, Keep-Alive
+22:35:09.553 [Test worker] DEBUG org.apache.http.headers - << Cache-Control: max-age=600
+22:35:09.553 [Test worker] DEBUG org.apache.http.headers - << Expires: Tue, 11 Aug 2020 17:15:10 GMT
+22:35:09.553 [Test worker] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,User-Agent
+22:35:09.554 [Test worker] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+22:35:09.554 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 315
+22:35:09.554 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=2, max=500
+22:35:09.554 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/html; charset=UTF-8
+22:35:09.563 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 2000 MILLISECONDS
+22:35:09.594 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+22:35:09.595 [Test worker] DEBUG org.apache.http.wire -  << "[0x1f]"
+22:35:09.595 [Test worker] DEBUG org.apache.http.wire -  << "[0x8b]"
+22:35:09.595 [Test worker] DEBUG org.apache.http.wire -  << "[0x8]"
+22:35:09.595 [Test worker] DEBUG org.apache.http.wire -  << "[0x0]"
+22:35:09.596 [Test worker] DEBUG org.apache.http.wire -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+22:35:09.596 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+22:35:09.757 [Test worker] DEBUG org.apache.http.wire -  << "[0xb5][0x94][0xcf]k[0x83]0[0x14][0xc7][0xff][0x15]O;)$[0xfe][0xa8][0xd6][0x9e]$Z[0xf0]P-5;[0x8c]1D\f[0x85][0xaa][[0x12][0xf][0xa3][0xf8][0xbf]o%[0x16]L[0xc7]0[0x85]zz$[0xef][0x9b][0xef]{|[0xc8]{[0xe7][0xa7][0xaf][0xbe][0xe3][0x1b]JX]]>&#x7f;<![CDATA[[0xe2][0xbe]8[0xf8]g[0x11][0x19]/8iH[0xcb][0xd9]x[0xff]:&[0xf0]!H[0xb2][0x0][0xe1]8M[0xf2]8[0x1c][0x93]"@SD][0x84][0x0][0xa1][0xf4]9[0xc1]y[0x92][0xca]*I[0x14][0x6]8[0xca][0xd3]m>[0xb1][0x95][0xd4]&[0x80][0x96][0x1][0xa1][0x1]W[0xb2][0xf7][0xee]b-)[0x1d][0x0]$[0xc9][0xb4]Q[0xfc][0xb2][0x8f]$q(7[0x11]e[0xe8][0x10][0xef][0xff][0x14][0x8f][0xdb][0x9a][0xd7][0xc5]I[0xb][0xc9]g[0xc7]j..[0x7]}[0x9e][0x84]i-H[0xc2][0x9d]#[0x1]mu[0x10]\[0x9][0xc4]w[0xad][0xe1][0xa2]e[0x1f][0x84]j[[0xda]5[0xda][0xb5][0x82][0x12][0xb]gA[0x16][0xde],[0x8b]G[0xa3]8V[0xd5][\r][0xb]G[0x9d][0x85][0xbd]v[0xed]ep[0xb8][0x6][0xb0][\r]h[0xcd][0xe1][0xb8]cD[0xd4]p[0x80][0x1b][0x18][0xea],[0xd6][0xb6][0xb7]r[0x17]a[0xe1]][0xbe][0x86][0x9][0xe7]X[0xdc][0xb5]0[0xd4]h[0x94][0x5];[0xfe]3)o[0xc3][0xf8][0xb6]![0x8c][0x15][0x15][0x91][0xd7]mDiGQ[0xf7]N[0xae]k[0x18][0xe8][0x93][0xc4][0x8e]U[0xbe]T'[0xeb][0xcb][0xf2][0xd7]f[0xb4][0x1e]~[0x0][0x8f][0x11][0xc8][0xa8][0xc9][0x5][0x0][0x0]"
+22:35:09.762 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@56959750
+22:35:09.763 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive for 2000 MILLISECONDS
+HTTP/1.1 200 OK
+Date: Tue, 11 Aug 2020 17:05:10 GMT
+Server: Apache
+Upgrade: h2,h2c
+Connection: Upgrade, Keep-Alive
+Cache-Control: max-age=600
+Expires: Tue, 11 Aug 2020 17:15:10 GMT
+Vary: Accept-Encoding,User-Agent
+Content-Encoding: gzip
+Content-Length: 315
+Keep-Alive: timeout=2, max=500
+Content-Type: text/html; charset=UTF-8
+
+<html>
+  <body>{"result:":{"statements":[{"TRANSACTION_ID":"12","ACCOUNT_NO":"1","DATE_OF_TRANSACTION":"2013-11-16","AMOUNT":"500","TRANSACTION_TYPE":"D","DESCRIPTION":"Initial Deposit"},{"TRANSACTION_ID":"23","ACCOUNT_NO":"1","DATE_OF_TRANSACTION":"2013-11-17","AMOUNT":"14","TRANSACTION_TYPE":"t","DESCRIPTION":"yi Tansfer From 14"},{"TRANSACTION_ID":"25","ACCOUNT_NO":"1","DATE_OF_TRANSACTION":"2013-11-18","AMOUNT":"1","TRANSACTION_TYPE":"t","DESCRIPTION":"hgg Tansfer From 15"},{"TRANSACTION_ID":"49745","ACCOUNT_NO":"1","DATE_OF_TRANSACTION":"2017-04-13","AMOUNT":"0","TRANSACTION_TYPE":"t","DESCRIPTION":"0 Tansfer From 1"},{"TRANSACTION_ID":"94867","ACCOUNT_NO":"1","DATE_OF_TRANSACTION":"2018-11-21","AMOUNT":"500","TRANSACTION_TYPE":"t","DESCRIPTION":"cash Tansfer From 14"}]},"message":{"ErrorCode:":0,"ErrorMsg:":"Success"}}</body>
+</html>
+io.restassured.internal.ValidatableResponseImpl@1c98132b
+22:35:10.324 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://demo.guru99.com:80
+22:35:10.325 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to demo.guru99.com:80
+22:35:10.780 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+22:35:10.781 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:35:10.781 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+22:35:10.781 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+22:35:10.781 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+22:35:10.781 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:10.782 [Test worker] DEBUG org.apache.http.wire -  >> "GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1[\r][\n]"
+22:35:10.783 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+22:35:10.783 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+22:35:10.783 [Test worker] DEBUG org.apache.http.wire -  >> "Host: demo.guru99.com[\r][\n]"
+22:35:10.784 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+22:35:10.784 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)[\r][\n]"
+22:35:10.785 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+22:35:10.786 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+22:35:10.786 [Test worker] DEBUG org.apache.http.headers - >> GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:10.786 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+22:35:10.786 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 0
+22:35:10.787 [Test worker] DEBUG org.apache.http.headers - >> Host: demo.guru99.com
+22:35:10.787 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+22:35:10.788 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)
+22:35:10.788 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+22:35:11.393 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+22:35:11.393 [Test worker] DEBUG org.apache.http.wire -  << "Date: Tue, 11 Aug 2020 17:05:12 GMT[\r][\n]"
+22:35:11.394 [Test worker] DEBUG org.apache.http.wire -  << "Server: Apache[\r][\n]"
+22:35:11.394 [Test worker] DEBUG org.apache.http.wire -  << "Upgrade: h2,h2c[\r][\n]"
+22:35:11.394 [Test worker] DEBUG org.apache.http.wire -  << "Connection: Upgrade, Keep-Alive[\r][\n]"
+22:35:11.394 [Test worker] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=600[\r][\n]"
+22:35:11.394 [Test worker] DEBUG org.apache.http.wire -  << "Expires: Tue, 11 Aug 2020 17:15:12 GMT[\r][\n]"
+22:35:11.394 [Test worker] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+22:35:11.395 [Test worker] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+22:35:11.395 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 315[\r][\n]"
+22:35:11.395 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=2, max=500[\r][\n]"
+22:35:11.395 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+22:35:11.395 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+22:35:11.395 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+22:35:11.395 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+22:35:11.395 [Test worker] DEBUG org.apache.http.headers - << Date: Tue, 11 Aug 2020 17:05:12 GMT
+22:35:11.395 [Test worker] DEBUG org.apache.http.headers - << Server: Apache
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Upgrade: h2,h2c
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Connection: Upgrade, Keep-Alive
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Cache-Control: max-age=600
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Expires: Tue, 11 Aug 2020 17:15:12 GMT
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,User-Agent
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 315
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=2, max=500
+22:35:11.396 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/html; charset=UTF-8
+22:35:11.397 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 2000 MILLISECONDS
+22:35:11.398 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+22:35:11.398 [Test worker] DEBUG org.apache.http.wire -  << "[0x1f]"
+22:35:11.398 [Test worker] DEBUG org.apache.http.wire -  << "[0x8b]"
+22:35:11.398 [Test worker] DEBUG org.apache.http.wire -  << "[0x8]"
+22:35:11.398 [Test worker] DEBUG org.apache.http.wire -  << "[0x0]"
+22:35:11.398 [Test worker] DEBUG org.apache.http.wire -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+22:35:11.398 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+The time taken to fetch the response 1142 milliseconds
+22:35:11.434 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://demo.guru99.com:80
+22:35:11.435 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to demo.guru99.com:80
+22:35:11.954 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+22:35:11.954 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:35:11.954 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+22:35:11.954 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+22:35:11.954 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+22:35:11.954 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:11.954 [Test worker] DEBUG org.apache.http.wire -  >> "GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1[\r][\n]"
+22:35:11.955 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+22:35:11.955 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+22:35:11.955 [Test worker] DEBUG org.apache.http.wire -  >> "Host: demo.guru99.com[\r][\n]"
+22:35:11.955 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+22:35:11.955 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)[\r][\n]"
+22:35:11.955 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+22:35:11.956 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+22:35:11.956 [Test worker] DEBUG org.apache.http.headers - >> GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:11.956 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+22:35:11.956 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 0
+22:35:11.956 [Test worker] DEBUG org.apache.http.headers - >> Host: demo.guru99.com
+22:35:11.956 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+22:35:11.956 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)
+22:35:11.956 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+22:35:12.622 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+22:35:12.622 [Test worker] DEBUG org.apache.http.wire -  << "Date: Tue, 11 Aug 2020 17:05:13 GMT[\r][\n]"
+22:35:12.622 [Test worker] DEBUG org.apache.http.wire -  << "Server: Apache[\r][\n]"
+22:35:12.622 [Test worker] DEBUG org.apache.http.wire -  << "Upgrade: h2,h2c[\r][\n]"
+22:35:12.624 [Test worker] DEBUG org.apache.http.wire -  << "Connection: Upgrade, Keep-Alive[\r][\n]"
+22:35:12.624 [Test worker] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=600[\r][\n]"
+22:35:12.625 [Test worker] DEBUG org.apache.http.wire -  << "Expires: Tue, 11 Aug 2020 17:15:13 GMT[\r][\n]"
+22:35:12.625 [Test worker] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+22:35:12.625 [Test worker] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+22:35:12.625 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 315[\r][\n]"
+22:35:12.625 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=2, max=500[\r][\n]"
+22:35:12.626 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+22:35:12.626 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+22:35:12.626 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+22:35:12.627 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+22:35:12.627 [Test worker] DEBUG org.apache.http.headers - << Date: Tue, 11 Aug 2020 17:05:13 GMT
+22:35:12.627 [Test worker] DEBUG org.apache.http.headers - << Server: Apache
+22:35:12.627 [Test worker] DEBUG org.apache.http.headers - << Upgrade: h2,h2c
+22:35:12.627 [Test worker] DEBUG org.apache.http.headers - << Connection: Upgrade, Keep-Alive
+22:35:12.627 [Test worker] DEBUG org.apache.http.headers - << Cache-Control: max-age=600
+22:35:12.629 [Test worker] DEBUG org.apache.http.headers - << Expires: Tue, 11 Aug 2020 17:15:13 GMT
+22:35:12.629 [Test worker] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,User-Agent
+22:35:12.629 [Test worker] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+22:35:12.629 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 315
+22:35:12.629 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=2, max=500
+22:35:12.630 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/html; charset=UTF-8
+22:35:12.631 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 2000 MILLISECONDS
+22:35:12.632 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+22:35:12.633 [Test worker] DEBUG org.apache.http.wire -  << "[0x1f]"
+22:35:12.633 [Test worker] DEBUG org.apache.http.wire -  << "[0x8b]"
+22:35:12.633 [Test worker] DEBUG org.apache.http.wire -  << "[0x8]"
+22:35:12.634 [Test worker] DEBUG org.apache.http.wire -  << "[0x0]"
+22:35:12.634 [Test worker] DEBUG org.apache.http.wire -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+22:35:12.634 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+The content type of response text/html; charset=UTF-8
+22:35:12.675 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://demo.guru99.com:80
+22:35:12.675 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to demo.guru99.com:80
+22:35:13.236 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+22:35:13.237 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+22:35:13.237 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+22:35:13.237 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+22:35:13.237 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+22:35:13.237 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:13.237 [Test worker] DEBUG org.apache.http.wire -  >> "GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1[\r][\n]"
+22:35:13.238 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+22:35:13.238 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+22:35:13.238 [Test worker] DEBUG org.apache.http.wire -  >> "Host: demo.guru99.com[\r][\n]"
+22:35:13.238 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+22:35:13.238 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)[\r][\n]"
+22:35:13.238 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+22:35:13.239 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+22:35:13.239 [Test worker] DEBUG org.apache.http.headers - >> GET /V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234%21&Account_No=1 HTTP/1.1
+22:35:13.239 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+22:35:13.239 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 0
+22:35:13.239 [Test worker] DEBUG org.apache.http.headers - >> Host: demo.guru99.com
+22:35:13.239 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+22:35:13.239 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.12 (Java/12.0.2)
+22:35:13.239 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+22:35:14.056 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+22:35:14.057 [Test worker] DEBUG org.apache.http.wire -  << "Date: Tue, 11 Aug 2020 17:05:14 GMT[\r][\n]"
+22:35:14.057 [Test worker] DEBUG org.apache.http.wire -  << "Server: Apache[\r][\n]"
+22:35:14.058 [Test worker] DEBUG org.apache.http.wire -  << "Upgrade: h2,h2c[\r][\n]"
+22:35:14.058 [Test worker] DEBUG org.apache.http.wire -  << "Connection: Upgrade, Keep-Alive[\r][\n]"
+22:35:14.058 [Test worker] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=600[\r][\n]"
+22:35:14.059 [Test worker] DEBUG org.apache.http.wire -  << "Expires: Tue, 11 Aug 2020 17:15:14 GMT[\r][\n]"
+22:35:14.059 [Test worker] DEBUG org.apache.http.wire -  << "Vary: Accept-Encoding,User-Agent[\r][\n]"
+22:35:14.059 [Test worker] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+22:35:14.060 [Test worker] DEBUG org.apache.http.wire -  << "Content-Length: 315[\r][\n]"
+22:35:14.060 [Test worker] DEBUG org.apache.http.wire -  << "Keep-Alive: timeout=2, max=500[\r][\n]"
+22:35:14.061 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+22:35:14.061 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+22:35:14.061 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+22:35:14.061 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+22:35:14.061 [Test worker] DEBUG org.apache.http.headers - << Date: Tue, 11 Aug 2020 17:05:14 GMT
+22:35:14.061 [Test worker] DEBUG org.apache.http.headers - << Server: Apache
+22:35:14.061 [Test worker] DEBUG org.apache.http.headers - << Upgrade: h2,h2c
+22:35:14.061 [Test worker] DEBUG org.apache.http.headers - << Connection: Upgrade, Keep-Alive
+22:35:14.062 [Test worker] DEBUG org.apache.http.headers - << Cache-Control: max-age=600
+22:35:14.062 [Test worker] DEBUG org.apache.http.headers - << Expires: Tue, 11 Aug 2020 17:15:14 GMT
+22:35:14.062 [Test worker] DEBUG org.apache.http.headers - << Vary: Accept-Encoding,User-Agent
+22:35:14.062 [Test worker] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+22:35:14.062 [Test worker] DEBUG org.apache.http.headers - << Content-Length: 315
+22:35:14.062 [Test worker] DEBUG org.apache.http.headers - << Keep-Alive: timeout=2, max=500
+22:35:14.062 [Test worker] DEBUG org.apache.http.headers - << Content-Type: text/html; charset=UTF-8
+22:35:14.062 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive for 2000 MILLISECONDS
+22:35:14.063 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: text/html; charset=UTF-8
+22:35:14.063 [Test worker] DEBUG org.apache.http.wire -  << "[0x1f]"
+22:35:14.064 [Test worker] DEBUG org.apache.http.wire -  << "[0x8b]"
+22:35:14.064 [Test worker] DEBUG org.apache.http.wire -  << "[0x8]"
+22:35:14.064 [Test worker] DEBUG org.apache.http.wire -  << "[0x0]"
+22:35:14.064 [Test worker] DEBUG org.apache.http.wire -  << "[0x0][0x0][0x0][0x0][0x0][0x3]"
+22:35:14.064 [Test worker] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+The headers in the response Date=Tue, 11 Aug 2020 17:05:14 GMT
+Server=Apache
+Upgrade=h2,h2c
+Connection=Upgrade, Keep-Alive
+Cache-Control=max-age=600
+Expires=Tue, 11 Aug 2020 17:15:14 GMT
+Vary=Accept-Encoding,User-Agent
+Content-Encoding=gzip
+Content-Length=315
+Keep-Alive=timeout=2, max=500
+Content-Type=text/html; charset=UTF-8
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
